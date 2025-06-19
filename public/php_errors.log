@@ -1,0 +1,25 @@
+[09-Jun-2025 22:55:38 UTC] PHP Fatal error:  Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\symfony\http-foundation\Response.php:387) in C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\symfony\http-foundation\Response.php:322
+Stack trace:
+#0 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}()
+#2 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\symfony\http-foundation\Response.php(322): header()
+#3 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\symfony\http-foundation\Response.php(401): Symfony\Component\HttpFoundation\Response->sendHeaders()
+#4 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(219): Symfony\Component\HttpFoundation\Response->send()
+#5 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#6 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#7 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}()
+#8 {main}
+  thrown in C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\symfony\http-foundation\Response.php on line 322
+[09-Jun-2025 22:55:38 UTC] PHP Fatal error:  Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\symfony\http-foundation\Response.php:387) in C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\symfony\http-foundation\Response.php:322
+Stack trace:
+#0 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}()
+#2 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\symfony\http-foundation\Response.php(322): header()
+#3 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\symfony\http-foundation\Response.php(401): Symfony\Component\HttpFoundation\Response->sendHeaders()
+#4 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(219): Symfony\Component\HttpFoundation\Response->send()
+#5 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#6 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(232): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#7 C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}()
+#9 {main}
+  thrown in C:\Users\203120\CaladriusTrabalho\Caladrius\vendor\symfony\http-foundation\Response.php on line 322
