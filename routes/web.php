@@ -38,8 +38,8 @@ Route::middleware(['auth'])->group(function () {
     
     // Figuras Routes
     Route::get('/produtos/novo-figura', [FiguraController::class, 'view'])->name('figuras.create');
-    Route::post('/produtos/novo-figura', [FiguraController::class, 'store'])->name('figuras.store');
-    Route::resource('figura', FiguraController::class)->except(['show', 'index']);
+    Route::post('/produtos/novo-figura', [FiguraController::class, 'store'])->name('figura.store');
+    Route::resource('figuras', FiguraController::class)->except(['show', 'index']);
     
     // Usuarios routes
     Route::get('/usuarios', [UserController::class, 'index'])->name('usuarios.index');

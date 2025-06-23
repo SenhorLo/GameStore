@@ -17,7 +17,7 @@
         @csrf
         <div class="form-group">
             <label for="figura">Nome</label>
-            <input type="text" name="titulo" class="form-control" required>
+            <input type="text" name="nome" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="preco">Preço</label>

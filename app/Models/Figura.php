@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Figura extends Model
 {
-    protected $table = 'figura';
+    protected $table = 'figuras';
 
     protected $fillable = [
         'nome',

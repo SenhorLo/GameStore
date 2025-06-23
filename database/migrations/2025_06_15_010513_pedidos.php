@@ -16,15 +16,15 @@ return new class extends Migration
             $table->unsignedBigInteger('id_usuario');
             $table->unsignedBigInteger('id_vendedor');
             $table->unsignedBigInteger('id_jogo')->nullable();
-            $table->unsignedBigInteger('id_livro')->nullable();
-            $table->unsignedBigInteger('id_filme')->nullable();
+            $table->unsignedBigInteger('id_figura')->nullable();
+            $table->unsignedBigInteger('id_console')->nullable();
             $table->timestamps();
 
             $table->foreign('id_usuario')->references('id')->on('usuarios')->onDelete('cascade');
             $table->foreign('id_vendedor')->references('id')->on('vendedores')->onDelete('cascade');
             $table->foreign('id_jogo')->references('id')->on('jogos')->onDelete('cascade');
-            $table->foreign('id_livro')->references('id')->on('livros')->onDelete('cascade');
-            $table->foreign('id_filme')->references('id')->on('filmes')->onDelete('cascade');
+            $table->foreign('id_figura')->references('id')->on('figuras')->onDelete('cascade');
+            $table->foreign('id_console')->references('id')->on('consoles')->onDelete('cascade');
         });
     }
     

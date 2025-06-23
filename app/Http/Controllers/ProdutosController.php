@@ -51,15 +51,29 @@ class ProdutosController extends Controller
     public function storeFigura(Request $request)
     {
         $request->validate([
-            'nome' => 'required|string|max:255',
-            'emporesa' => 'required|string|max:255',
-           'personagem' => 'required|string|max:255',
-           'edicao' => 'required|integer',
-           'genero' => 'required|string|max:255',
+        'nome' => 'required|string|max:255',
+        'emporesa' => 'required|string|max:255',
+        'personagem' => 'required|string|max:255',
+        'edicao' => 'required|integer',
+        'genero' => 'required|string|max:255',
            'preco' => 'required|numeric',
        ]);
 
         Figura::create($request->all());
        return redirect('/produtos')->with('success', 'Figura adicionada com sucesso!');
+    }
+
+    public function storeConsole(Request $request)
+    {
+        $request->validate([
+        'nome' => 'required|string|max:255',
+        'emporesa' => 'required|string|max:255',
+        'edicao' => 'required|integer',
+        'genero' => 'required|string|max:255',
+        'preco' => 'required|numeric',
+       ]);
+
+        Console::create($request->all());
+       return redirect('/produtos')->with('success', 'Console adicionado com sucesso!');
     }
 }

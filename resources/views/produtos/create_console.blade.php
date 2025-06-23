@@ -16,8 +16,8 @@
     <form action="{{ url('/produtos/novo-console') }}" method="POST">
         @csrf
         <div class="form-group">
-            <label for="titulo">Nome</label>
-            <input type="text" name="titulo" class="form-control" required>
+            <label for="console">Nome</label>
+            <input type="text" name="nome" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="preco">Preço</label>

@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pedido_filme', function (Blueprint $table) {
+        Schema::create('pedido_console', function (Blueprint $table) {
             $table->unsignedBigInteger('pedido_id');
-            $table->unsignedBigInteger('filme_id');
+            $table->unsignedBigInteger('console_id');
             $table->integer('quantidade')->nullable()->default('0');
 
             $table->foreign('pedido_id')->references('id')->on('pedidos')->onDelete('cascade');
-            $table->foreign('filme_id')->references('id')->on('filmes')->onDelete('cascade');
+            $table->foreign('console_id')->references('id')->on('consoles')->onDelete('cascade');
         });
     }
 
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pedido_filme');
+        Schema::dropIfExists('pedido_console');
     }
 };

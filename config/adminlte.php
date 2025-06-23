@@ -343,14 +343,14 @@ return [
             'icon' => 'fas fa-fw fa-gamepad',
         ],
         [
-            'text' => 'Adicionar Filme',
-            'url' => '/produtos/novo-filme',
-            'icon' => 'fas fa-fw fa-film',
+            'text' => 'Adicionar Console',
+            'url' => '/produtos/novo-console',
+            'icon' => 'fas fa-fw fa-gamepad',
         ],
         [
-            'text' => 'Adicionar Livro',
-            'url' => '/produtos/novo-livro',
-            'icon' => 'fas fa-fw fa-book',
+            'text' => 'Adicionar Figura',
+            'url' => '/produtos/novo-figura',
+            'icon' => 'fas fa-fw fa-user',
         ],
         ['header' => 'PEDIDOS'],
         [
